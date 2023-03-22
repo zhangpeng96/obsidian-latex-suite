@@ -429,7 +429,7 @@ function conceal(view: EditorView) {
             const concealments = [
                 ...concealSymbols(eqn, "\\^", "", map_super),
                 ...concealSymbols(eqn, "_", "", map_sub),
-                ...concealSymbols(eqn, "\\\\frac", "", fractions),
+                ...concealSymbols(eqn, "\\\\dfrac", "", fractions),
                 ...concealSymbols(eqn, "\\\\", "", ALL_SYMBOLS),
                 ...concealSupSub(eqn, true, ALL_SYMBOLS),
                 ...concealSupSub(eqn, false, ALL_SYMBOLS),
