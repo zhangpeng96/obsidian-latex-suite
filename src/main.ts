@@ -688,7 +688,7 @@ export default class LatexSuitePlugin extends Plugin {
 			}
 
 
-			const replacement = "\\frac{" + numerator + "}{$0}$1";
+			const replacement = "\\dfrac{" + numerator + "}{$0}$1";
 
 			this.snippetManager.queueSnippet({from: start, to: to, insert: replacement, keyPressed: "/"});
 
